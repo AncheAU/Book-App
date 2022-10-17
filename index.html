@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Book App</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    
+    <!-- <link rel="stylesheet" href="/css"> -->
+
+</head>
+  <body>
+
+    <nav class="bg-dark text-center">
+        <h1 class="text-white p-3">My Book App</h1>
+    </nav>
+
+    <div class="container mt-2">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-lg-6">
+
+            <form class="book-Form">
+            <div class="form-group">
+                 <label for="isbn"> ISB</label>
+                 <input type="text" name="isbn" class="form-control " id="isbn">   
+            </div>
+            <div class="form-group">
+                 <label for="bookName"> Book Name</label>
+                 <input type="text" name="bookName" class="form-control " id="bookName">   
+            </div>
+            <div class="form-group">
+                 <label for="authorName"> Author Name</label>
+                 <input type="text" name="authorName" class="form-control" id="authorName">   
+            </div>
+            <!-- <button class="btn btn-success form-control mt-2">Add</button> -->
+            <input type="submit" value="Add" class="btn btn-success mt-2 form-control">
+        </form>
+      </div>
+      
+      <div class="col-md-12 col-sm-12 col-lg-6">
+        <h3 class="bg-info text-white text-center p-3 mt-4">Books</h3> 
+        <table class="table">
+            <thead>
+                <th>ISB</th>
+                <th>Book Name</th>
+                <th>Author Name</th>
+                <th>Action</th>
+            </thead>
+            <tbody id="book-list">
+                <!-- <tr>
+                    <td>123</td>
+                    <td>Javascript</td>
+                    <td>Rajat</td>
+                    <td><i class="bi bi-trash text-danger"></i></td>
+                </tr> -->
+            </tbody>
+        </table>
+    </div>
+       </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+
+    <script src="index.js"></script>
+    <!-- <script src="script.js"></script> -->
+
+</body>
+</html>
